@@ -7,7 +7,7 @@ export async function DownloadSlides(id: string) {
   const buffer = Buffer.from(arr)
 
   if (buffer.length > 3125) {
-    fs.writeFileSync(`${CONFIG.OUTPUT_FOLDER}/${id}.pdf`, buffer)
+    fs.writeFileSync(`${CONFIG.ASSET_FOLDER}/slides/${id}.pdf`, buffer)
   } else {
     console.log('Invalid slides', id)
   }

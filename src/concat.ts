@@ -2,8 +2,18 @@ import { Concat } from 'actions/ffmpeg'
 import { join } from 'path'
 import { CONFIG } from 'utils/config'
 
+console.log('Running Concat in', CONFIG.NODE_ENV, 'mode')
+
 async function run() {
-  await Concat([join(CONFIG.INPUT_FOLDER, 'intro.mp4'), join(CONFIG.INPUT_FOLDER, 'rekt.mp4')], join(CONFIG.OUTPUT_FOLDER, 'mp4', 'porto-out.mp4'))
+  const sessionId = 'test'
+  await Concat(
+    [
+      join(CONFIG.ASSET_FOLDER, 'intros', `${sessionId}.mp4`),
+      join(CONFIG.ASSET_FOLDER, 'splits', `${sessionId}.mp4`),
+      join(CONFIG.ASSET_FOLDER, 'outro.mp4'),
+    ],
+    join(CONFIG.ASSET_FOLDER, 'out', `${sessionId}.mp4`)
+  )
 }
 
 run()
