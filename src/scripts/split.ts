@@ -1,4 +1,4 @@
-import { Split } from 'actions/ffmpeg'
+import { Split } from 'utils/ffmpeg'
 import { CONFIG } from 'utils/config'
 
 console.log('Running Split in', CONFIG.NODE_ENV, 'mode')

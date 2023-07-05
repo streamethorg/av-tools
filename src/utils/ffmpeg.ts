@@ -1,7 +1,7 @@
 import concat from 'ffmpeg-concat'
 import ffmpeg from 'fluent-ffmpeg'
 import ffmpegPath from 'ffmpeg-static'
-import { CONFIG } from 'utils/config'
+import { CONFIG } from './config'
 import { createReadStream, existsSync, ReadStream } from 'fs'
 import * as child from 'child_process'
 

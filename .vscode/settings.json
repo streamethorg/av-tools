@@ -1,4 +1,12 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+	"editor.tabSize": 2,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": false,
+		"source.fixAll": true
+	},
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"css.lint.unknownAtRules": "ignore"
 }

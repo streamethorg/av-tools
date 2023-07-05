@@ -1,4 +1,4 @@
-import { Concat } from 'actions/ffmpeg'
+import { Concat } from 'utils/ffmpeg'
 import { join } from 'path'
 import { CONFIG } from 'utils/config'
 

@@ -1,0 +1,14 @@
+{
+	"extends": ["@remotion", "plugin:@typescript-eslint/recommended", "prettier"],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["prettier"],
+	"rules": {
+		"prettier/prettier": ["error"]
+	},
+	"env": {
+		"node": true
+	}
+}

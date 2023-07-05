@@ -1,9 +1,4 @@
-import { CONFIG } from 'utils/config'
+import { registerRoot } from 'remotion'
+import { Compositions } from './compositions'
 
-console.log('Running in', CONFIG.NODE_ENV, 'mode')
-
-Run()
-
-async function Run() {
-  process.exit(0)
-}
+registerRoot(Compositions)

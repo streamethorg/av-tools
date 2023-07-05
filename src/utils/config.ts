@@ -15,8 +15,9 @@ export const CONFIG = {
 ;(() => {
   console.log('Create required folders..')
 
+  mkdirSync(join(CONFIG.ASSET_FOLDER, 'hd'), { recursive: true })
   mkdirSync(join(CONFIG.ASSET_FOLDER, 'intros'), { recursive: true })
   mkdirSync(join(CONFIG.ASSET_FOLDER, 'out'), { recursive: true })
-  mkdirSync(join(CONFIG.ASSET_FOLDER, 'tmp'), { recursive: true })
+  mkdirSync(join(CONFIG.ASSET_FOLDER, 'social'), { recursive: true })
   mkdirSync(join(CONFIG.ASSET_FOLDER, 'splits'), { recursive: true })
 })()
