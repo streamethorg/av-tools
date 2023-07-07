@@ -30,6 +30,7 @@
   ],
   "dependencies": {
     "@ethersproject/providers": "^5.7.2",
+    "@livepeer/react": "^2.5.8",
     "@remotion/bundler": "4.0.1",
     "@remotion/cli": "4.0.1",
     "@remotion/zod-types": "4.0.1",
