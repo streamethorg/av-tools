@@ -11,6 +11,7 @@ export const CONFIG = {
   BITRATE: process.env.BITRATE || 128,
 
   GITHUB_TOKEN: process.env.GITHUB_TOKEN,
+  GOOGLE_API_KEY: process.env.GOOGLE_API_KEY,
 }
 ;(() => {
   console.log('Create required folders..')
