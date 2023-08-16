@@ -10,6 +10,7 @@
     "test": "eslint src --ext ts,tsx,js,jsx && tsc",
     "prettier": "prettier './src' --write",
     "run": "ts-node ./src/index.ts",
+    "run:sheets": "ts-node ./src/scripts/sheets.ts",
     "run:slides": "ts-node ./src/scripts/slides.ts",
     "run:concat": "ts-node ./src/scripts/concat.ts",
     "run:render": "ts-node ./src/scripts/render.ts",
